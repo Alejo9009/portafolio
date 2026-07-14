@@ -27,14 +27,6 @@ export const projects = [
     codeUrl: 'https://github.com/tu-usuario/otro-repo',
     liveUrl: 'https://f1calculadora.vercel.app/',
   },
-    {
-    id: 2,
-    title: 'Otro proyecto',
-    description: 'Descripción corta de este segundo proyecto.',
-    image: '/projects/proyecto-2.png',
-    tech: ['Python'],
-    codeUrl: 'https://github.com/tu-usuario/otro-repo',
-    liveUrl: 'https://f1calculadora.vercel.app/',
-  },
+  
   
 ]
