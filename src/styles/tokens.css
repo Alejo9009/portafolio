@@ -1,0 +1,36 @@
+:root {
+  /* Color */
+  --color-bg: #0b0b0f;
+  --color-bg-panel: #131318;
+  --color-accent: #e8352a;
+  --color-accent-hover: #ff4a3d;
+  --color-tech: #00e5ff;
+  --color-highlight: #ffc93c;
+  --color-text: #f5f1e8;
+  --color-text-muted: #9a9aa5;
+  --color-border: #2a2a33;
+  --color-border-strong: #f5f1e8;
+
+  /* Tipografía */
+  --font-display: "Bangers", system-ui, sans-serif;
+  --font-body: "Work Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --fs-hero: clamp(2.75rem, 6vw, 5.5rem);
+  --fs-h2: clamp(2rem, 4vw, 3.25rem);
+  --fs-h3: 1.5rem;
+  --fs-body: 1.05rem;
+  --fs-small: 0.85rem;
+
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  --max-width: 1200px;
+  --radius: 4px;
+
+  --panel-shadow: 6px 6px 0 var(--color-border-strong);
+  --panel-shadow-accent: 6px 6px 0 var(--color-accent);
+}
