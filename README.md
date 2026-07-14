@@ -17,8 +17,3 @@ Hero section responsiva para portafolio personal con efecto de superposición y 
 - Desktop: Full experience
 - Tablet: Layout adaptado
 - Mobile: Overlay optimizado
-
-## 🛠️ Instalación
-```bash
-npm install
-npm start
