@@ -1,12 +1,19 @@
-import { projects } from '../../data/projects'
-import './Projects.css'
+import { projects } from "../../data/projects";
+import "./Projects.css";
 
 function Projects() {
   return (
     <section id="proyectos" className="projects">
       <div className="container">
-        <h2 className="projects-title">Proyectos publicados</h2>
-
+        <div className="projects-header">
+          <div>
+            <p className="section-label">// trabajo seleccionado</p>
+            <h2 className="projects-title">Proyectos</h2>
+          </div>
+          <h2 className="projects-count">
+            {String(projects.length).padStart(2, "0")} Proyectos
+          </h2>
+        </div>
         <div className="projects-grid">
           {projects.map((project) => (
             <article className="project-card" key={project.id}>
@@ -29,8 +36,7 @@ function Projects() {
                 </ul>
 
                 <div className="project-actions">
-                  
-                    <a
+                  <a
                     href={project.codeUrl}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -40,8 +46,8 @@ function Projects() {
                   </a>
 
                   {project.liveUrl && (
-                    
-                      <a href={project.liveUrl}
+                    <a
+                      href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-btn project-btn-live"
@@ -56,7 +62,7 @@ function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

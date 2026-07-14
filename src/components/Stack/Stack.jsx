@@ -7,7 +7,9 @@ function Stack() {
       <div className="container">
         <p className="section-label">// stats de personaje</p>
         <h2 className="stack-title">Mi stack</h2>
-
+        <h3 className="stack-subtitle">Tecnologías que utilizo</h3>
+ <br />
+  <br />
         <div className="stack-grid">
           {stack.map((group) => (
             <div className="stack-card" key={group.category}>

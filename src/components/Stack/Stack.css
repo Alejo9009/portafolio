@@ -1,4 +1,8 @@
 .stack {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: var(--space-xl) 0;
   background: var(--color-bg);
 }
