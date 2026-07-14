@@ -1,4 +1,3 @@
-
 import './Hero.css'
 
 function Hero() {
@@ -8,9 +7,9 @@ function Hero() {
       <div className="hero-overlay" />
 
       <div className="hero-content">
-        <p className="section-label"><b>// desarrollador full stack jr.</b></p>
+        <p className="section-label"><b>//Desarrollador full stack jr.</b></p>
         <h1 className="hero-title">
-          <span className="accent">Hola soy Alejandro</span>.
+          Hola soy <span className="accent">Alejandro</span>.
         </h1>
         <p className="hero-subtitle">
           <b>Construyo aplicaciones web de principio a fin.</b>
