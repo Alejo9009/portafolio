@@ -27,6 +27,14 @@ export const projects = [
     codeUrl: 'https://github.com/Alejo9009/SETS-PROYECTO',
 
   },
-  
+   {
+    id: 2,
+    title: 'PORTAFOLIO PERSONAL',
+    description: ' Hero Section - Componente de presentación responsivo con overlay dinámico, efectos visuales y CTA animado para portafolio personal. Desarrollado con React y CSS moderno..',
+    image: '/projects/PORTAFOLIO.png',
+    tech: ['React','Vite' , 'CSS3' ],
+    codeUrl: 'https://github.com/Alejo9009/portafolio',
+    liveUrl: 'https://portafolio-five-zeta-22.vercel.app/#proyectos',
+  },
   
 ]

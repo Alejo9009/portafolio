@@ -42,7 +42,7 @@ function Projects() {
                     rel="noopener noreferrer"
                     className="project-btn project-btn-code"
                   >
-                    Ver código
+                    Ver Repositorio
                   </a>
 
                   {project.liveUrl && (
