@@ -1,16 +1,22 @@
-# React + Vite
+<img width="1646" height="818" alt="image" src="https://github.com/user-attachments/assets/8d676452-cbd4-44d9-923e-af81713b9f2b" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Hero Component
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Hero section responsiva para portafolio personal con efecto de superposición y animaciones.
 
-## React Compiler
+## 🚀 Tecnologías
+- React
+- CSS3 (Flexbox, Animaciones)
+- Custom Properties
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- Overlay inteligente
+- Diseño 100% responsivo
+- Animaciones suaves
+- Tipografía fluida
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📱 Responsive
+- Desktop: Full experience
+- Tablet: Layout adaptado
+- Mobile: Overlay optimizado
