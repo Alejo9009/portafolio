@@ -1,9 +1,10 @@
 .hero {
   position: relative;
   min-height: 100svh;
+  min-height: 100vh; /* Fallback para navegadores que no soportan svh */
   display: flex;
-  align-items: flex-end;       /* antes: center */
-  justify-content: flex-start; /* antes: center */
+  align-items: flex-end;
+  justify-content: flex-start;
   overflow: hidden;
   background: var(--color-bg);
 }
@@ -16,14 +17,13 @@
   background-position: center;
 }
 
-/* Overlay ahora solo oscurece la esquina inferior izquierda (donde va el texto),
-   dejando el resto de la imagen -y el auto- nítido */
+/* Overlay responsivo */
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
     115deg,
-    rgba(11, 11, 15, 0.92) 0%,
+    rgba(3, 3, 34, 0.92) 0%,
     rgba(11, 11, 15, 0.75) 22%,
     rgba(11, 11, 15, 0.35) 45%,
     transparent 65%
@@ -51,32 +51,36 @@
   text-align: left;
   max-width: 560px;
   padding: 0 var(--space-lg) var(--space-xl);
+  width: 100%;
+}
+
+.section-label {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
 }
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(5.25rem, 9vw, 4.25rem); /* un poco más contenido que antes */
+  font-size: clamp(2.8rem, 8vw, 5.25rem);
   font-weight: 400;
   letter-spacing: 0.02em;
   margin: var(--space-sm) 0;
   line-height: 1.1;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
-.hero-title .accent {
-  color: var(--color-accent);
-  text-shadow:
-    0 0 8px rgba(232, 53, 42, 0.8),
-    0 0 24px rgba(232, 53, 42, 0.5),
-    0 0 48px rgba(232, 53, 42, 0.3);
-}
+
 
 .hero-subtitle {
   color: #bacdee;
   font-family: var(--font-mono);
-  font-size: 1.05rem;
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
   letter-spacing: 0.03em;
   margin-bottom: var(--space-md);
+  line-height: 1.6;
+  max-width: 90%;
 }
 
 .hero-cta {
@@ -91,13 +95,73 @@
   font-weight: 500;
   padding: 0.75rem 1.5rem;
   border-radius: var(--radius);
+  font-size: clamp(0.9rem, 1.5vw, 1rem);
   
   animation: pulse-glow 2.5s ease-in-out infinite;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
 }
 
 .hero-cta:hover {
   background: var(--color-accent);
   color: var(--color-bg);
   transform: translateY(-2px);
+}
+
+/* Media Queries para responsividad adicional */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 0 var(--space-md) var(--space-lg);
+    max-width: 100%;
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      135deg,
+      rgba(11, 11, 15, 0.95) 0%,
+      rgba(11, 11, 15, 0.85) 30%,
+      rgba(11, 11, 15, 0.5) 60%,
+      transparent 80%
+    );
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content {
+    padding: 0 var(--space-sm) var(--space-md);
+  }
+
+  .hero-cta {
+    padding: 0.6rem 1.2rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 12vw, 2.8rem);
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      145deg,
+      rgba(11, 11, 15, 0.98) 0%,
+      rgba(11, 11, 15, 0.9) 25%,
+      rgba(11, 11, 15, 0.6) 55%,
+      transparent 75%
+    );
+  }
+}
+
+/* Animación pulse-glow (si no la tienes definida) */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(238, 25, 13, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(232, 53, 42, 0.2);
+  }
 }

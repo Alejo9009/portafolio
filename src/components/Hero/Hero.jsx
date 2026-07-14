@@ -12,7 +12,7 @@ function Hero() {
           Hola soy <span className="accent">Alejandro</span>.
         </h1>
         <p className="hero-subtitle">
-          <b>Construyo aplicaciones web de principio a fin.</b>
+          <b>Desarrollador de software junior especializado en el desarrollo de aplicaciones web full stack. Me enfoco en crear soluciones eficientes, intuitivas y seguras que resuelvan problemas reales, aplicando buenas prácticas de desarrollo y tecnologías modernas.</b>
         </p>
         <a href="#proyectos" className="hero-cta">
           Ver mi trabajo <span aria-hidden="true">↓</span>
