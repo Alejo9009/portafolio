@@ -8,7 +8,7 @@ export const stack = [
     items: ['JavaScript', 'Python', 'Java'],
   },
   {
-    category: 'QA & Automatización',
+    category: 'Automatización  y QA',
     items: ['Power Apps', 'Power Automate', 'SharePoint', 'Testing manual'],
   },
   {
