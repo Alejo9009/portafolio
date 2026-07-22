@@ -55,7 +55,7 @@
 }
 
 .contact-subtitle {
-  color: var(--color-text-muted);
+  color: #ffffff;
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
